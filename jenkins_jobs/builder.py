@@ -530,7 +530,7 @@ class Builder(object):
                 if names:
                     print job.output()
                     continue
-                fn = os.path.join(output_dir, job.name)
+                fn = os.path.join(output_dir, job.name + ".xml")
                 logger.debug("Writing XML to '{0}'".format(fn))
                 f = open(fn, 'w')
                 f.write(job.output())
